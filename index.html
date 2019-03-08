@@ -8,17 +8,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="myjs.js"></script>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
 
 </head>
 
 <body>
+  
   <div class="container">
-      <div class="form-row" id="head">
+      <br>
+      <br>
+      <br>
+      
+      
+
+
+      <div class="shadow-lg p-5 mb-5 rounded">
+         <center> <h2>APRIORI AGORITHM</h2></center>
+         <hr class="line">
+     <br>
+      <div class="row1">
+              <div class="form-group row">
+
+                  <div class="col-4">
+                      <label class="mb-2 mr-sm-2 ">Minimum Support (%)</label>
+                      <input type="number"  class="form-control mb-2 mr-sm-2" name="MinimumSupport" id="MinimumSupport" ></input>
+                  </div>
+                  <div class="col-4">
+                      <label class="mb-2 mr-sm-2">Confidence Support(%) </label>
+                      <input type="number" class="form-control mb-2 mr-sm-2" name="ConfidentSupport" id="ConfidentSupport" ></input>
+
+                  </div>
+
+                  <div class="col-4">
+                      <label class="mb-2 mr-sm-2 ">Transactions</label>
+                      <input type="number"onchange="table()" class="form-control mb-2 mr-sm-2" name="table" id="table"></input>
+                  </div>
+
+              </div>
+
+          </div>
+          <div class="row2">
+                    
+              <div class="col-sm-12">
+                  <div class="form-group row">
+
+                      <div class="col-12">
+                              <!-- <label class="mb-2 mr-sm-2 ">Enter Items</label> -->
+                              <div id="showbox"></div>
+                          </div></div>
+                         <center><button type="button" onclick="inputarr()" class="btn btn-outline-danger">Apriori</button></center> 
+             <!-- <div class="btn btn-outline-danger" id="btn1"></div> -->
+                        </div>
+          </div>
+
+          <div class="row2">
+              <div class="col-sm-12">
+                  <hr class="line"><br>
+                  <div id="subSetItem"></div>
+                  <div id="subSet"></div><br>
+                <div id="setItem"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+ 
+
+  <br>
+  <br>
+
+
+
+
+
+      <!-- <div class="form-row" id="head">
         <div class="col-4">
           <input type="number" onchange="table()" class="form-control" name="table" id="table" aria-describedby="helpId" placeholder="" min="0">
           <small id="helpId" class="form-text text-muted">Transaction</small>
@@ -40,7 +111,7 @@
    
 
  
-  </div>
+  </div> -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

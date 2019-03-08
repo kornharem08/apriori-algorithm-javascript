@@ -2,3 +2,40 @@
         margin-top: 50px;
         
 }
+*{
+      font-family: 'Source Serif Pro', serif;
+        font-size: 18px;  
+}
+body{
+        background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+        /* background-image: linear-gradient(to right, #CBBACC 0%, #2580B3 100%); */
+        /* background-image: linear-gradient(to right, #FFE29F 0%, #FFA99F 48%, #FF719A 100%); */
+        /* background-image: linear-gradient(to right, #f794a4 0%, #fdd6bd 100%); */
+        /* background-image: linear-gradient(to right, #ddd6f3 0%, #faaca8 100%, #faaca8 100%); */
+        
+    }
+      .TableLine {
+        border-top-style: none;
+        border-right-style: none;   
+        border-bottom-style: none;
+        
+        border-left-style: solid;   
+        border-left-width: 5px;
+        border-left-color: Tomato;
+           }
+    
+          .input {
+          
+           
+            padding: 16px 32px;
+          
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+          .shadow-lg{
+           background-color:white;
+             
+          }
+          hr.line {
+            border: 1px solid red;
+          }
